@@ -6,7 +6,10 @@ window = Tk()
 window.title("Title")
 window.geometry("800x600")
 window.configure(bg = "lightblue")
+
+
 """
+# creating a grid to add in a check to see if pl1 or pl2 have won
 win = {"p1": ["x", "x", "x",], "ps":["y", "y", "y",]}
 grid = [
     ["", "", ""]
