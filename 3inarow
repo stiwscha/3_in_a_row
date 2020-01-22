@@ -1,0 +1,125 @@
+from tkinter import *
+import tkinter.messagebox as mbox
+
+btclick = True
+window = Tk()
+window.title("Title")
+window.geometry("800x600")
+window.configure(bg = "lightblue")
+"""
+win = {"p1": ["x", "x", "x",], "ps":["y", "y", "y",]}
+grid = [
+    ["", "", ""]
+    ["", "", ""]
+    ["", "", ""]
+]
+
+def check_grid():
+    global grid
+"""
+
+
+
+def bt1_pressed():
+    global btclick
+    if button1["text"] == "" and btclick == True:
+        button1["text"] = "X"
+        btclick = False
+    elif button1["text"] == "" and btclick == False:
+        button1["text"] = "O"
+        btclick = True
+
+def bt2_pressed():
+    global btclick
+    if button2["text"] == "" and btclick == True:
+        button2["text"] = "X"
+        btclick = False
+    elif button2["text"] == "" and btclick == False:
+        button2["text"] = "O"
+        btclick = True
+
+def bt3_pressed():
+    global btclick
+    if button3["text"] == "" and btclick == True:
+        button3["text"] = "X"
+        btclick = False
+    elif button3["text"] == "" and btclick == False:
+        button3["text"] = "O"
+        btclick = True
+
+def bt4_pressed():
+    global btclick
+    if button4["text"] == "" and btclick == True:
+        button4["text"] = "X"
+        btclick = False
+    elif button4["text"] == "" and btclick == False:
+        button4["text"] = "O"
+        btclick = True
+
+def bt5_pressed():
+    global btclick
+    if button5["text"] == "" and btclick == True:
+        button5["text"] = "X"
+        btclick = False
+    elif button5["text"] == "" and btclick == False:
+        button5["text"] = "O"
+        btclick = True
+
+def bt6_pressed():
+    global btclick
+    if button6["text"] == "" and btclick == True:
+        button6["text"] = "X"
+        btclick = False
+    elif button6["text"] == "" and btclick == False:
+        button6["text"] = "O"
+        btclick = True
+
+def bt7_pressed():
+    global btclick
+    if button7["text"] == "" and btclick == True:
+        button7["text"] = "X"
+        btclick = False
+    elif button7["text"] == "" and btclick == False:
+        button7["text"] = "O"
+        btclick = True
+
+def bt8_pressed():
+    global btclick
+    if button8["text"] == "" and btclick == True:
+        button8["text"] = "X"
+        btclick = False
+    elif button8["text"] == "" and btclick == False:
+        button8["text"] = "O"
+        btclick = True
+
+def bt9_pressed():
+    global btclick
+    if button9["text"] == "" and btclick == True:
+        button9["text"] = "X"
+        btclick = False
+    elif button9["text"] == "" and btclick == False:
+        button9["text"] = "O"
+        btclick = True
+
+
+
+button1 = Button(text="", bg="grey", height=8, width=12, command=bt1_pressed)
+button1.grid(row=1, column=0, sticky= S+E+W+N)
+button2 = Button(text="", bg="grey", height=8, width=12, command=bt2_pressed)
+button2.grid(row=1, column=1, sticky= S+E+W+N)
+button3 = Button(text="", bg="grey", height=8, width=12, command=bt3_pressed)
+button3.grid(row=1, column=2, sticky= S+E+W+N)
+button4 = Button(text="", bg="grey", height=8, width=12, command=bt4_pressed)
+button4.grid(row=2, column=0, sticky= S+E+W+N)
+button5 = Button(text="", bg="grey", height=8, width=12, command=bt5_pressed)
+button5.grid(row=2, column=1, sticky= S+E+W+N)
+button6 = Button(text="", bg="grey", height=8, width=12, command=bt6_pressed)
+button6.grid(row=2, column=2, sticky= S+E+W+N)
+button7 = Button(text="", bg="grey", height=8, width=12, command=bt7_pressed)
+button7.grid(row=3, column=0, sticky= S+E+W+N)
+button8 = Button(text="", bg="grey", height=8, width=12, command=bt8_pressed)
+button8.grid(row=3, column=1, sticky= S+E+W+N)
+button9 = Button(text="", bg="grey", height=8, width=12, command=bt9_pressed)
+button9.grid(row=3, column=2, sticky= S+E+W+N)
+
+window.mainloop()
